@@ -101,7 +101,7 @@ func (o *OrderHdlImpl) CreateOrderHdl(ctx *gin.Context) {
 		}
 	}
 
-	ctx.JSON(http.StatusOK, message.Response{
+	ctx.JSON(http.StatusCreated, message.Response{
 		Code:    0,
 		Message: "success create order",
 		Data:    result,
